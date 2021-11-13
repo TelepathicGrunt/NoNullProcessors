@@ -7,15 +7,13 @@ String fileContents = new File("./", "CHANGELOG.md").text
 curseforge {
     project {
         apiKey = "$System.env.CURSEFORGEKEY"
-        id = "363949"
+        id = "546841"
         releaseType = "release"
         changelogType = 'markdown'
         changelog = fileContents
         addGameVersion("1.17")
         addGameVersion("1.17.1")
         addGameVersion("Fabric")
-
-        relations {}
 
         mainArtifact(remapJar) {
             displayName = "No Null Processors v${project.mod_version} (${project.minecraft_version} MC)"

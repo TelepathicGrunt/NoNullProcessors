@@ -2,7 +2,9 @@
   "required": true,
   "package": "com.telepathicgrunt.no_null_processors.mixin",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [],
+  "mixins": [
+    "RegistryReadOpsMixin"
+  ],
   "client": [],
   "injectors": {
     "defaultRequire": 1

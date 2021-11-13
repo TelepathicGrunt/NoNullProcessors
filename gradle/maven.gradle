@@ -18,18 +18,18 @@ publishing {
             pom {
                 name = 'NoNullProcessors-Fabric'
                 description = 'Prevent Mojang bug where processor list can be null due to overwriting registry at runtime'
-                url = ''
+                url = 'https://github.com/TelepathicGrunt/NoNullProcessors'
 
                 scm {
-                    connection = 'git: .git'
-                    developerConnection = 'git: .git'
-                    url = ' '
+                    connection = 'git:https://github.com/TelepathicGrunt/NoNullProcessors.git'
+                    developerConnection = 'git:https://github.com/TelepathicGrunt/NoNullProcessors.git'
+                    url = 'https://github.com/TelepathicGrunt/NoNullProcessors'
                 }
 
                 licenses {
                     license {
                         name = 'MIT'
-                        url = ' /LICENSE'
+                        url = 'https://github.com/TelepathicGrunt/NoNullProcessors/LICENSE'
                     }
                 }
 

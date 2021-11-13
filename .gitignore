@@ -1,0 +1,32 @@
+# gradle
+
+.gradle/
+build/
+out/
+classes/
+gradle/wrapper
+
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# vscode
+
+.settings/
+.vscode/
+bin/
+.classpath
+.project
+
+# fabric
+
+run/
+backup/
+/deps/
+
+# songs
+*.ogg
+*.launch

@@ -11,6 +11,5 @@ public class NoNullProcessors implements ModInitializer {
     public static final String MODID = "no_null_processors";
     public static final Logger LOGGER = LogManager.getLogger(MODID);
     @Override
-    public void onInitialize() {
-    }
+    public void onInitialize() {}
 }

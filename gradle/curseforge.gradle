@@ -11,12 +11,11 @@ curseforge {
         releaseType = "release"
         changelogType = 'markdown'
         changelog = fileContents
-        addGameVersion("1.17")
-        addGameVersion("1.17.1")
+        addGameVersion("1.18")
         addGameVersion("Fabric")
 
         mainArtifact(remapJar) {
-            displayName = "No Null Processors v${project.mod_version} (${project.minecraft_version} MC)"
+            displayName = "No Null Processors Fabric v${project.mod_version} (${project.minecraft_version} MC)"
         }
 
         afterEvaluate {

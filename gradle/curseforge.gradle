@@ -12,18 +12,10 @@ curseforge {
         changelogType = 'markdown'
         changelog = fileContents
         addGameVersion("1.18")
-        addGameVersion("Fabric")
+        addGameVersion("Forge")
 
-        mainArtifact(remapJar) {
-            displayName = "No Null Processors Fabric v${project.mod_version} (${project.minecraft_version} MC)"
+        mainArtifact(jar) {
+            displayName = "No Null Processors Forge v${project.mod_version} (${project.mc_version} MC)"
         }
-
-        afterEvaluate {
-            uploadTask.dependsOn("remapJar")
-        }
-    }
-    options {
-        //debug = true
-        forgeGradleIntegration = false
     }
 }

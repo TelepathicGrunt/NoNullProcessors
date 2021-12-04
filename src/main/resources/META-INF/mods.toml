@@ -1,0 +1,21 @@
+modLoader="javafml" #mandatory
+loaderVersion="[38,)" #mandatory
+license="MIT License"
+
+[[mods]] #mandatory
+modId="no_null_processors" #mandatory
+version="${file.jarVersion}" #mandatory
+logoFile="no_null_processors.png"
+logoBlur=false
+displayName="No Null Processors" #mandatory
+authors="TelepathicGrunt" #optional
+description='''
+No weird null processor crash today
+'''
+displayURL="https://www.curseforge.com/minecraft/mc-mods/no-null-processors"
+
+# makes sure our mod does not be attempted to be ran on older version of Minecraft and explodes
+[[dependencies.no_null_processors]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18, 1.19)"

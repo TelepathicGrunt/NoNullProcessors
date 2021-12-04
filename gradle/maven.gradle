@@ -1,22 +1,12 @@
-apply plugin: 'maven-publish'
-
-task apiJar(type: Jar, dependsOn: classes) {
-    from(sourceSets.main.output)
-    include 'no_null_processors/**'
-}
+jar.finalizedBy('reobfJar')
 
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            artifact(remapJar) {
-                builtBy remapJar
-            }
-            artifact(sourcesJar) {
-                builtBy remapSourcesJar
-            }
+            artifact jar
 
             pom {
-                name = 'NoNullProcessors-Fabric'
+                name = 'NoNullProcessors-Forge'
                 description = 'Prevent Mojang bug where processor list can be null due to overwriting registry at runtime'
                 url = 'https://github.com/TelepathicGrunt/NoNullProcessors'
 

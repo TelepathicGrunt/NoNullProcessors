@@ -19,7 +19,9 @@ public class RegistryReadOpsMixin {
     @Unique
     private static final Map<ResourceManager, RegistryReadOps<?>> cachedOps = new WeakHashMap<>();
 
-    @Inject(method = "create(Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/resources/RegistryReadOps;", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "create(Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/resources/RegistryReadOps;",
+            at = @At("HEAD"),
+            cancellable = true)
     private static <T> void cacheOpsForPoolElementStructurePiece1(DynamicOps<T> ops, ResourceManager manager, RegistryAccess registryAccess, CallbackInfoReturnable<RegistryReadOps<T>> cir) {
         if (ops == NbtOps.INSTANCE) {
             RegistryReadOps<?> nbtOps = cachedOps.get(manager);
@@ -29,7 +31,9 @@ public class RegistryReadOpsMixin {
         }
     }
 
-    @Inject(method = "create(Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/resources/RegistryReadOps;", at = @At("RETURN"), cancellable = true)
+    @Inject(method = "create(Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/core/RegistryAccess;)Lnet/minecraft/resources/RegistryReadOps;",
+            at = @At("RETURN"),
+            cancellable = true)
     private static <T> void cacheOpsForPoolElementStructurePiece2(DynamicOps<T> ops, ResourceManager manager, RegistryAccess registryAccess, CallbackInfoReturnable<RegistryReadOps<T>> cir) {
         if (ops == NbtOps.INSTANCE) {
             cachedOps.put(manager, cir.getReturnValue());

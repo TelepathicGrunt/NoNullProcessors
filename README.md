@@ -16,14 +16,14 @@ repositories {
 
 &nbsp;
 
-Don't forget to change <modversion> with the actual latest version of this mod like `1.0.0` for example.
+Don't forget to change <modversion> with the actual latest version of this mod like `2.0.1` for example.
 
 <blockquote>
 dependencies {
 
 ...
 
-&nbsp;&nbsp;&nbsp;&nbsp;modRuntimeOnly "com.telepathicgrunt:NoNullProcessors:<modversion>+1.17.1"
+&nbsp;&nbsp;&nbsp;&nbsp;modRuntimeOnly "com.telepathicgrunt:NoNullProcessors:<modversion>+1.18.1"
 
 }</blockquote>
 

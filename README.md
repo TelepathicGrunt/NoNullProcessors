@@ -23,7 +23,7 @@ dependencies {
 
 ...
 
-&nbsp;&nbsp;&nbsp;&nbsp;modImplementation "com.telepathicgrunt:NoNullProcessors-Fabric:<modversion>+1.17.1"
+&nbsp;&nbsp;&nbsp;&nbsp;modRuntimeOnly "com.telepathicgrunt:NoNullProcessors-Fabric:<modversion>+1.17.1"
 
 }</blockquote>
 

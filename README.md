@@ -23,7 +23,7 @@ dependencies {
 
 ...
 
-&nbsp;&nbsp;&nbsp;&nbsp;modImplementation "com.telepathicgrunt:NoNullProcessors-Forge:<modversion>+1.18.1"
+&nbsp;&nbsp;&nbsp;&nbsp;runtimeOnly fg.deobf("com.telepathicgrunt:NoNullProcessors-Forge:<modversion>+1.18.1")
 
 }</blockquote>
 

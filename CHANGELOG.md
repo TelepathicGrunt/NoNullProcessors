@@ -1,3 +1,9 @@
+### **(V.2.0.2 Changes) (1.18.1 Minecraft)**
+
+##### Misc:
+Changed fabric.mod.json file to prevent this mod from loading in 1.18.2 or newer.
+
+
 ### **(V.2.0.1 Changes) (1.18.1 Minecraft)**
 
 ##### Misc:

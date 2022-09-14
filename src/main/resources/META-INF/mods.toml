@@ -18,4 +18,4 @@ displayURL="https://www.curseforge.com/minecraft/mc-mods/no-null-processors"
 [[dependencies.no_null_processors]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18, 1.19)"
+    versionRange="[1.18, 1.18.2)"

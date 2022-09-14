@@ -1,6 +1,6 @@
 apply plugin: "com.matthewprenger.cursegradle"
 
-String fileContents = new File("./", "CHANGELOG.md").text
+String fileContents = file("./CHANGELOG.md").getText('UTF-8')
 //file('CHANGELOG.md')
 
 
